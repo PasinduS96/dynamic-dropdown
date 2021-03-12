@@ -6,17 +6,24 @@ import 'dynamic-dropdown/dist/index.css'
 const App = () => {
 
   const options = [
-    { value: "Spring", label: "Spring", color: "#498205" },
-    { value: "Summer", label: "Summer", color: "#c19c00" },
-    { value: "Autumn", label: "Autumn", color: "#da3b01" },
-    { value: "Winter", label: "Winter", color: "#004e8c" }
+    { value: "Spring", label: "Spring"},
+    { value: "Summer", label: "Summer"},
+    { value: "Autumn", label: "Autumn"},
+    { value: "Winter", label: "Winter"}
   ];
 
   const styles = {
-    selection: {width: 300 , borderRadius: 10}
+    selection: {width: 300 , borderRadius: 10},
+    div: {},
+    options: {}
   }
 
-  return <DropDown elements={options} selection={styles.selection}/>
+  return <DropDown 
+    elements={options} 
+    selection={styles.selection} 
+    div={styles.div} 
+    options={styles.options}
+  />
 }
 
 export default App

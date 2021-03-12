@@ -13,16 +13,36 @@ npm install --save dynamic-dropdown
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'dynamic-dropdown'
+import { DropDown } from 'dynamic-dropdown'
 import 'dynamic-dropdown/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const App = () => {
+  const options = [
+    { value: 'Spring', label: 'Spring' },
+    { value: 'Summer', label: 'Summer' },
+    { value: 'Autumn', label: 'Autumn' },
+    { value: 'Winter', label: 'Winter' }
+  ]
+
+  const styles = {
+    selection: { width: 300, borderRadius: 10 }, //Styles for dropdown menu
+    div: {}, //Styles for div
+    options: {} //Styles for dropdown selection option
   }
+
+  return (
+    <DropDown
+      elements={options}
+      selection={styles.selection}
+      div={styles.div}
+      options={styles.options}
+    />
+  )
 }
+
+export default App
 ```
 
 ## License

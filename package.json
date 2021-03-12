@@ -4,7 +4,7 @@
   "description": "You can create dynamic dropdown by passing an array according to your requirements. This package will mostly fullfill many kind of dropdown menu component requirements when developing react apps.",
   "author": "PasinduS96",
   "license": "MIT",
-  "repository": "PasinduS96/dynamic-dropdown",
+  "repository": "https://github.com/PasinduS96/dynamic-dropdown",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

@@ -47,4 +47,4 @@ export default App
 
 ## License
 
-MIT © [PasinduS96](https://github.com/PasinduS96)
+MIT © [PasinduS96](https://github.com/PasinduS96/dynamic-dropdown)
